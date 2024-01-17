@@ -1,0 +1,38 @@
+<script>
+ $(document).ready(function(){
+          $(oMain).on("start_session", function(evt) {
+                  //THIS EVENT IS TRIGGERED WHEN PLAY BUTTON IN MENU SCREEN IS CLICKED
+           });
+            
+          $(oMain).on("end_session", function(evt) {
+                  //THIS EVENT IS TRIGGERED WHEN THE EXIT BUTTON IS CLICKED.
+          });
+           
+          $(oMain).on("start_level", function(evt,iLevel) {
+                  //THIS EVENT IS TRIGGERED WHEN GAME STARTS
+          });
+           
+          $(oMain).on("end_level", function(evt,iLevel) {
+                  //THIS EVENT IS TRIGGERED WHEN THE EXIT BUTTON IS CLICKED.
+           });
+            
+          $(oMain).on("save_score", function(evt,iScore, szMode) {
+                  //THIS EVENT IS TRIGGERED WHEN GAME IS OVER. IT CAN BE USEFUL TO CALL PHP SCRIPTS (NOT PROVIDED IN THE PACKAGE) THAT SAVE THE SCORE.
+           });
+            
+           $(oMain).on("show_interlevel_ad", function(evt) {
+                  //THIS EVENT IS TRIGGERED WHEN GAME IS OVER. MAY BE USEFUL TO CALL ADS SCRIPT.
+           });
+            
+           $(oMain).on("restart_level", function(evt,iLevel) {
+                  //THIS EVENT IS TRIGGERED WHEN GAME IS RESTARTED
+           });
+            
+           $(oMain).on("share_event", function(evt,iScore) {
+                  //THIS EVENT IS TRIGGERED WHEN GAME OVER IS SHOWN.
+           });
+         });
+       
+</script>
+ 
+                <canvas id="canvas" class="ani_hack" width="768" height="1280"> </canvas>
